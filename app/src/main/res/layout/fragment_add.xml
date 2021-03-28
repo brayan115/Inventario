@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <EditText
+        android:id="@+id/input_name_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Nombre del Producto"
+        android:padding="10dp"
+
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName|textCapWords"
+        android:background="@drawable/background"
+        />
+
+    <EditText
+        android:id="@+id/input_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_name_producto"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+
+        android:hint="Precio del producto"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_precio"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+
+        android:hint="Descripciòn (Opcional)"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_description"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/red"
+        android:outlineAmbientShadowColor="@color/white"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButtom"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/numbers"
+        android:text="Add Info"
+        android:background="@drawable/btn_background"
+        />
+</RelativeLayout>
