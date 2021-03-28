@@ -3,6 +3,7 @@ package com.tienda.minventario
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.tienda.minventario.fragments.AddFragment
 import com.tienda.minventario.fragments.CalculoFragment
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         val calculoFragment = CalculoFragment()
         val blankFragment = BlankFragment()
         val bottomNavigation: BottomNavigationView = findViewById(R.id.bottom_navigation)
+
+
+        //DATABASE
+
+
 
 
          bottomNavigation.setOnNavigationItemSelectedListener  {
